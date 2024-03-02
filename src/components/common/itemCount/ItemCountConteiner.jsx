@@ -20,7 +20,15 @@ const ItemCountConteiner = ({ stock }) => {
     }
   };
 
-  return <ItemCount count={count} addOne={addOne} subOne={subOne} />;
+
+// reseter cantidad en cero
+
+const reset = () => {
+setCount(0)
+}
+
+
+  return <ItemCount count={count} addOne={addOne} subOne={subOne} reset={reset} />;
 };
 
 export default ItemCountConteiner;

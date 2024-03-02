@@ -3,7 +3,7 @@ import { Grid, Container } from "@mui/material";
 // exportar presentacional
 import { useState, useEffect } from "react";
 import ItemList from "./ItemList";
-import { products } from "../../../../productsMock";
+import { products } from "../../../productsMock";
 
 // AQUI VA LA LOGICA
 const ItemListContainer = () => {

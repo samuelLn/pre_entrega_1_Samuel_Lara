@@ -36,3 +36,10 @@ export let products = [
     category: "Todas",
   },
 ];
+
+export const getProducts = () => {
+  return new Promise((resolve, reject) => {
+    
+    if(products.length > 0){ setTimeout(()=>{resolve(products)}, 2000)} else { reject("No hay productos")}
+  });
+};

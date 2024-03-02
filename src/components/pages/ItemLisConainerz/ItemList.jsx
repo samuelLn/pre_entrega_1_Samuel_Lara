@@ -1,6 +1,6 @@
 //expórta tarejetas presentacional
 
-import { ProductCard } from "../../../common/ProductCard";
+import { ProductCard } from "../../common/ProductCard";
 
 export const ItemList = ({ items }) => {
   //console.log(items);
