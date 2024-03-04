@@ -15,6 +15,7 @@ export const ItemList = ({ items }) => {
             title={title}
             description={description}
             price={price}
+            id={id} // Id para el boton detalle
           />
         );
       })}

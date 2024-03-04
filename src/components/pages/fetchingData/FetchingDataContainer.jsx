@@ -63,3 +63,5 @@ const FetchingDataContainer = () => {
 };
 
 export default FetchingDataContainer;
+
+// Muestra consusmo api extarna metodo get post y get
