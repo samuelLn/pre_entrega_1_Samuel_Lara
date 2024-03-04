@@ -15,7 +15,7 @@ export let products = [
     description: "Ingredientes de la mejo calidad",
     img: "https://res.cloudinary.com/dlkhuh69i/image/upload/v1707353029/pizzaDos_fqcbxh.png",
     stock: 10,
-    category: "Primavera ",
+    category: "Primavera",
   },
   {
     id: "3",
