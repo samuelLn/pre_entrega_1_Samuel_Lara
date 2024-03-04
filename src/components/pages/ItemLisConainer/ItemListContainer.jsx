@@ -13,6 +13,7 @@ const ItemListContainer = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    setIsLoading(true);
     //promesa
     const tarea = new Promise((resolve, reject) => {
       resolve(products);
