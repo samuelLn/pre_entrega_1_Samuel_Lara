@@ -1,6 +1,6 @@
 import ItemCountConteiner from "../../common/itemCount/ItemCountConteiner";
 
-const ItemDetail = ({ item }) => {
+const ItemDetail = ({ item, onAdd, initial }) => {
   return (
     <>
       <div>
@@ -9,7 +9,12 @@ const ItemDetail = ({ item }) => {
         <p>{item.description}</p>
         <h2>{item.price}</h2>
       </div>
-      <ItemCountConteiner />
+      {initial ? (
+        <h3> ya tienes {initial} en el carrito </h3>
+      ) : (
+        <h2> No tiene unidades</h2>
+      )}
+      <ItemCountConteiner stock={item.stock} onAdd={onAdd} initial={initial} />
     </>
   );
 };

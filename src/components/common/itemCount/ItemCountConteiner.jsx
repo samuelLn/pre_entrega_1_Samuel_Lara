@@ -1,8 +1,8 @@
 import { useState } from "react";
 import ItemCount from "./ItemCount";
 
-const ItemCountConteiner = ({ stock }) => {
-  const [count, setCount] = useState(1);
+const ItemCountConteiner = ({ stock, onAdd, initial = 1 }) => {
+  const [count, setCount] = useState(initial);
 
   //Agrerga producto
   const addOne = () => {
@@ -20,15 +20,21 @@ const ItemCountConteiner = ({ stock }) => {
     }
   };
 
+  // reseter cantidad en cero
 
-// reseter cantidad en cero
+  const reset = () => {
+    setCount(0);
+  };
 
-const reset = () => {
-setCount(0)
-}
-
-
-  return <ItemCount count={count} addOne={addOne} subOne={subOne} reset={reset} />;
+  return (
+    <ItemCount
+      count={count}
+      addOne={addOne}
+      subOne={subOne}
+      reset={reset}
+      onAdd={onAdd}
+    />
+  );
 };
 
 export default ItemCountConteiner;

@@ -1,6 +1,6 @@
 export let products = [
   {
-    id: "1",
+    id: 1,
     title: "Pizza Margarita 1",
     price: 4500,
     description: "Ingredientes de la mejo calidad",
@@ -9,7 +9,7 @@ export let products = [
     category: "Vegetariana",
   },
   {
-    id: "2",
+    id: 2,
     title: "Pizza Margarita 2",
     price: 4500,
     description: "Ingredientes de la mejo calidad",
@@ -18,7 +18,7 @@ export let products = [
     category: "Primavera",
   },
   {
-    id: "3",
+    id: 3,
     title: "Pizza Margarita 3",
     price: 4500,
     description: "Ingredientes de la mejo calidad",
@@ -27,7 +27,7 @@ export let products = [
     category: "Carnes",
   },
   {
-    id: "4",
+    id: 4,
     title: "Pizza Margarita 4",
     price: 4500,
     description: "Ingredientes de la mejo calidad",
@@ -36,7 +36,7 @@ export let products = [
     category: "Carnes",
   },
   {
-    id: "5",
+    id: 5,
     title: "Pizza Margarita 5",
     price: 4500,
     description: "Ingredientes de la mejo calidad",

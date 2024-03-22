@@ -1,5 +1,5 @@
 import { Grid, Container, Button } from "@mui/material";
-import CartWidget from "../../common/CartWidget";
+import CartWidget from "../../common/CartWidget/CartWidget";
 import { Link } from "react-router-dom";
 
 //componente Navbar
@@ -14,7 +14,9 @@ export const Navbar = () => {
             columnSpacing={{ xs: 1, sm: 2, md: 3 }}
           >
             <Grid item xs={2}>
-              <h3>Logo</h3>
+              <Link to="/">
+                <h3>Logo</h3>
+              </Link>
             </Grid>
 
             <Grid item xs={8}>
@@ -50,6 +52,8 @@ export const Navbar = () => {
 
             <Grid item xs={2}>
               <h4></h4>
+              <Link to="/dashboard">Admin</Link>
+
               <Link to="/Cart">
                 <CartWidget />
               </Link>
