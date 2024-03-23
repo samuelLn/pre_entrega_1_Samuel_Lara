@@ -1,9 +1,11 @@
-import { Cart } from "./Cart"
+import { Cart } from "./Cart";
 
 const CartContainer = () => {
   return (
-    <><Cart /></>
-  )
-}
+    <>
+      <Cart />
+    </>
+  );
+};
 
-export default CartContainer
+export default CartContainer;

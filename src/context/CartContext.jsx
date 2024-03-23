@@ -60,36 +60,23 @@ const CartContextProvaider = ({ children }) => {
     return total;
   };
 
+  const getTotalPrice = () => {
+    let totalPrice = cart.reduce((acc, elemento) => {
+      return acc + elemento.quantity * elemento.price;
+    }, 0);
 
- const getTotalPrice =() => {
+    return totalPrice;
+  };
 
-let totalPrice = cart.reduce((acc, elemento)=>{
+  const getTotalQuantityById = (id) => {
+    let product = cart.find((elemento) => elemento.id === id);
 
-  return acc + (elemento.quantity * elemento.price) 
-
-}, 0)
-
-return totalPrice
-
- }
-
-
-const getTotalQuantityById = (id) =>{
-
-  let product = cart.find((elemento)=> elemento.id === id)
-
-   if(product){
-      
-    return product.quantity
-   } else {
-    return product
-   }
-
-
-  
-}
-
-
+    if (product) {
+      return product.quantity;
+    } else {
+      return product;
+    }
+  };
 
   let data = {
     cart,
